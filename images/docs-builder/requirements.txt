@@ -1,6 +1,6 @@
 ## Auto-generated from Documentation/requirements-min/requirements.txt with "make update-requirements"
 Sphinx==9.0.4
-sphinx-autobuild==2024.10.3
+sphinx-autobuild==2025.8.25
 
 # Custom theme, forked from Read the Docs
 sphinx_rtd_theme_cilium @ git+https://github.com/cilium/sphinx_rtd_theme.git@aaa00bd49e9873767577c3d8cab45333b027c32c
@@ -22,7 +22,7 @@ yamllint==1.38.0
 alabaster==1.0.0
 annotated-doc==0.0.5
 annotated-types==0.8.0
-anyio==4.15.1
+anyio==4.16.0
 attrs==26.1.0
 babel==2.18.0
 certifi==2026.10.23
@@ -30,7 +30,7 @@ charset-normalizer==3.5.2
 click==8.5.0
 colorama==0.4.6
 deepmerge==4.0.0
-docutils==0.22.4
+docutils==0.23
 h11==0.16.0
 idna==3.20
 imagesize==2.0.1
