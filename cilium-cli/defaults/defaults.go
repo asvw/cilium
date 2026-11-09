@@ -88,6 +88,10 @@ const (
 	ConnectTimeout = 2 * time.Second
 	RequestTimeout = 10 * time.Second
 
+	// StableVersionTimeout bounds the lookup of the latest stable Cilium version by "cilium version",
+	// so that a host without a route to GitHub does not hold the command for the dialer's 30 s.
+	StableVersionTimeout = 10 * time.Second
+
 	UninstallTimeout = 5 * time.Minute
 
 	IngressClassName = "cilium"
@@ -113,6 +117,9 @@ var (
 	HelmRepository   = "https://helm.cilium.io"
 	HelmRepositoryID = sha256.Sum256([]byte(HelmRepository))
 	HelmMaxHistory   = 10
+
+	// StableVersionURL is where "cilium version" looks up the latest stable Cilium version.
+	StableVersionURL = "https://raw.githubusercontent.com/cilium/cilium/main/stable.txt"
 
 	// CiliumScheduleAffinity is the node affinity to prevent Cilium from being schedule on
 	// nodes labeled with CiliumNoScheduleLabel.

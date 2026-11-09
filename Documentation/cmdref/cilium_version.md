@@ -15,8 +15,9 @@ cilium version [flags]
 ### Options
 
 ```
-      --client   If true, shows client version only (no server required)
-  -h, --help     help for version
+      --client              If true, shows client version only (no server or network access required)
+  -h, --help                help for version
+      --skip-update-check   If true, does not check GitHub for the latest stable Cilium release. Can also be set via CILIUM_SKIP_UPDATE_CHECK env var
 ```
 
 ### Options inherited from parent commands
